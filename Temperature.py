@@ -1,6 +1,14 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+
+# Сброс ограничений на количество выводимых рядов
+pd.set_option('display.max_rows', None) 
+# Сброс ограничений на число столбцов
+pd.set_option('display.max_columns', None)
+# Сброс ограничений на количество символов в записи
+pd.set_option('display.max_colwidth', None)
+
 GOROD = {'Амурская область' : '4848', 'Приморский край' : '4877', 'Хабаровский край' : '4862', 'Якутия' : '4039',
         'Магаданская область' : '4063', 'Чукотский АО' : '4054', 'Сахалинская область' : '4894', 'Камчатка' : '4907'}
 Year = '2021'
@@ -29,5 +37,5 @@ for key, value in GOROD.items():
     dict_temp[key] = L
 DataTemp = pd.DataFrame(dict_temp, index = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31])
 DataTemp1 = DataTemp.T
-DataTemp1.to_excel('База-{}.{}.xls'.format(Month, Year))
-DataTemp1
+DataTemp1.to_excel('База-{}.{}.xlsx'.format(Month, Year))
+print(DataTemp1)

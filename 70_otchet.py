@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-%matplotlib inline
+
 DEK = pd.read_excel('11_ДЭК_70_ээ_план_пок.xls')
 DEK.columns = DEK.loc[0] # присваиваем столбцам имена из строки 0
 DEK = DEK.drop([0,1,2]) # удаляем ненужные строки
