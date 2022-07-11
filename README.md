@@ -45,6 +45,6 @@ python ИМЯ_ПРОГРАММЫ.py
 
 ## Стек технологий
 
-### Python 3, Selenium, Pandas, requests, Beautiful Soup
+### Python 3, Selenium, Pandas, requests, Beautiful Soup, Tkinter
 
 ## Автор проекта - Сергей Сторожук
