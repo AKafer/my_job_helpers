@@ -34,7 +34,7 @@ source venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
-### Добавить данные в файлы 0_коды_АТС.txt и 0_Имена_файлов.txt
+### Добавить данные в файлы 0_коды_АТС.txt и 0_Имена_файлов.txt в формате:
 
 ```
 0_коды_АТС.txt:
